@@ -1,0 +1,44 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Experiments",
+		"_postman_id": "521c2dce-3220-f320-8569-623fd42a2020",
+		"description": "Some of my experiments in rest\\soap.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "put in session",
+			"request": {
+				"url": "localhost:8080/sessionService/sessionMatters/ale/casula/false",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "takeFromSession",
+							"value": "true",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getFromSession",
+			"request": {
+				"url": "localhost:8080/sessionService/getUserContextFromSpringContext",
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
